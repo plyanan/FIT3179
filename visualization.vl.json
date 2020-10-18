@@ -1,13 +1,59 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "description": "A bar chart showing the US population distribution of age groups in 2000.",
-  "height": {"step": 17},
-  "data": {"url": "data/population.json"},
-  "transform": [{"filter": "datum.year == 2000"}],
+  "description": "A simple bar chart with embedded data.",
+  "data": {
+    "values": [
+      {
+        "a": "A",
+        "b": 28
+      },
+      {
+        "a": "B",
+        "b": 55
+      },
+      {
+        "a": "C",
+        "b": 43
+      },
+      {
+        "a": "D",
+        "b": 91
+      },
+      {
+        "a": "E",
+        "b": 81
+      },
+      {
+        "a": "F",
+        "b": 53
+      },
+      {
+        "a": "G",
+        "b": 19
+      },
+      {
+        "a": "H",
+        "b": 87
+      },
+      {
+        "a": "I",
+        "b": 52
+      }
+    ]
+  },
   "mark": "bar",
   "encoding": {
-    "y": {"field": "age"},
-    "x": {"aggregate": "sum", "field": "people", "title": "population"}
+    "x": {
+      "field": "a",
+      "type": "nominal",
+      "axis": {
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "b",
+      "type": "quantitative"
+    }
   },
   "config": {}
 }
