@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Types of Terrorist Attacks between 2001-2012",
+  "title": "Types of Terrorist Attacks",
   "width": 500,
   "height": 500,
   "data": {
