@@ -20,16 +20,16 @@
     }
     
     h1 {
-	color: #343434;
-	font-weight: normal;
-	font-family: 'Ultra', sans-serif;   
-	font-size: 36px;
-	line-height: 42px;
-	text-transform: uppercase;
-  	text-align: center;
+  color: #343434;
+  font-weight: normal;
+  font-family: 'Ultra', sans-serif;   
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+    text-align: center;
 }
 h3 { font-size: 19px;
-	  text-align: center;}
+    text-align: center;}
      body{
        background-color: #eba487;
      }
@@ -45,7 +45,7 @@ h3 { font-size: 19px;
     }
     .description h2, h1{
       margin-top:20px;
-	padding-left: 20px;
+  padding-left: 20px;
       padding-right: 20px;
     }
     .description-right {
@@ -69,10 +69,10 @@ h3 { font-size: 19px;
 
    <!-- pure grid group -->
     <div class="u-align-center">
-        <h1>Terrorist Attacks Since 1970</h1>
+        <h1>Visualising Acts of Terrorism Globally</h1>
     </div>
   <!-- end pure grid group -->
-	 
+   
   <!-- pure grid group -->
     <div class="u-align-center">
         <h3> <em>This page will visualise the Global Terrorism Database. The Database contains information about terrorist attacks since 1970 including location and the number of fatalities.</em></p>
@@ -85,7 +85,7 @@ h3 { font-size: 19px;
           <div class="description description-right">
             <h2>Map of Attacks</h2>
             <p>The map to the right marks all of the locations of deadly terrorist attacks recorded in the global terrorism database. Attacks which caused a larger number of fatalities have marks which are larger and darker. This map is able to demonstrate some of the areas which terrorist attacks and fatalities have been condensed around since 1970.</p>
-		  <p>Using the slider filter, we can see that prior to 1990, most of the attacks occurred in the Caribbean, North West of South America and in Sri Lanka. As we increase the filter, the attacks are now more focussed to Africa, the Middle East and India. Since 2010 there has also been a significant number of attacks in the Philippines.  </p>  
+      <p>Using the slider filter, we can see that prior to 1990, most of the attacks occurred in the Caribbean, North West of South America and in Sri Lanka. As we increase the filter, the attacks are now more focussed to Africa, the Middle East and India. Since 2010 there has also been a significant number of attacks in the Philippines.  </p>  
             <p>Below is a bar chart and map of fatalities in the Middle East where the colours indicate different terrorist groups. The bar chart shows that most of the fatalities have occurred in Iraq and Afghanistan whilst also being able to show that most of the four identified groups attacked specific regions of the Middle East. The map slider filter allows the timeline of conflicts to be visualised. Prior to 1990, most of the attacks occurred in Israel and Lebanon with attacks by the Kurdistan Workers’ Party occurring in Turkey during the 1990s. In the 2000s, the attacks became more deadly and were now in Iraq and Afghanistan. Most of the attacks in Afghanistan were by the Taliban as indicated by the blue circles. After 2010, we can see the emergence of the Islamic State of Iraq as indicated by the green dots which attacked Iraq and Syria. There are also more frequent attacks in Afghanistan by the Taliban. </p>
           </div>
         </div>
@@ -133,10 +133,10 @@ h3 { font-size: 19px;
           <div class="description description-left">
             <h2>Density of Attacks</h2>
             <p>The choropleth map shows the number of terrorist attacks which have occurred, and this is normalised by the area of the country. We can see that through much of Africa and the Middle East, there have been a significant number of attacks when compared to their size. There has also only been a small number of attacks in North Asia and Oceania as indicated by the light-yellow shading. </p>
-		<h2>Conclusion</h2>
-		<p>In conclusion, this visualisation highlights where there has been significant terrorist activity since 1970. The focus on the Middle East also allows the progression of conflict to be visualised including the clusters of attacks by different terrorist organisations. The clear trend of conflict becoming increasingly deadly is also demonstrated as well as the deadliness of explosives and firearms. It is worth noting that all attacks with an unknown number of deaths were classified as 0 death attacks and therefore the true number of deaths and deadly attacks will be higher. There are also some attacks with no record of location which were removed and therefore these would also increase the true number of attacks. </p>
-		  
-	</div>
+    <h2>Conclusion</h2>
+    <p>In conclusion, this visualisation highlights where there has been significant terrorist activity since 1970. The focus on the Middle East also allows the progression of conflict to be visualised including the clusters of attacks by different terrorist organisations. The clear trend of conflict becoming increasingly deadly is also demonstrated as well as the deadliness of explosives and firearms. It is worth noting that all attacks with an unknown number of deaths were classified as 0 death attacks and therefore the true number of deaths and deadly attacks will be higher. There are also some attacks with no record of location which were removed and therefore these would also increase the true number of attacks. </p>
+      
+  </div>
         </div>
         <div class="pure-u-17-24">
           <div id="vis1" class="vis-container"></div>
@@ -157,6 +157,10 @@ h3 { font-size: 19px;
    
 <script type="text/javascript">
   var specVis1 = "https://raw.githubusercontent.com/Ply2201/FIT3179/main/terrorismmap.json";
+  var specVis2 = "https://raw.githubusercontent.com/Ply2201/FIT3179/main/hotzonedeaths2001.json";
+  var specVis3 = "https://raw.githubusercontent.com/Ply2201/FIT3179/main/piechartattacktype.json";
+  var specVis4 = "https://raw.githubusercontent.com/Ply2201/FIT3179/main/piechartattacktype.json";
+  var specVis5 = "https://raw.githubusercontent.com/Ply2201/FIT3179/main/civilianswounded.json";
        
 
 
