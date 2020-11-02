@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Types of Weaponsn Used to Commit Terrorism",
+  "width": 500,
+  "height": 500,
+    "data": {
+      "url": "https://raw.githubusercontent.com/Ply2201/FIT3179/main/worldterrorism.csv"
+    },
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "field": "Year"
+      },
+      "y": {
+        "aggregate":"count"
+      },
+      "color": {
+        "field": "Weapons type"
+      }, 
+      "tooltip": [
+      {"field": "Weapons type", "type": "ordinal", "title": "Region"},
+      {"field": "Civilians killed", "type": "quantitative", "title": "Civilians killed"},
+      {"field": "Target type", "type": "ordinal", "title": "Target Type"}
+    ]
+    }
+  }

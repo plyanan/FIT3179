@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Terrorism Casualties in Hot Regions",
+  "width": 500,
+  "height": 500,
+  "description": "A simple bar chart with embedded data.",
+  "data": {
+    "values": [
+    
+      
+      {"Region": "Middle East and North Africa", "Deaths": 38629}, 
+      {"Region": "North America", "Deaths": 3133},
+      {"Region": "South America", "Deaths": 2096},
+      {"Region": "South East Asia", "Deaths": 4217},
+      {"Region": "Sub-Saharan Africa", "Deaths": 14085}
+      
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "Region", "type": "nominal", "axis": {"labelAngle": 0}},
+    "y": {"field": "Deaths", "type": "quantitative", "title": "Civilian Death Toll"},
+    "color": {"value": "#ff9900"},
+    "tooltip": [
+      {"field": "Region", "type": "ordinal", "title": "Region"},
+      {"field": "Deaths", "type": "quantitative", "title": "Death"}
+    ]
+    
+  }
+}

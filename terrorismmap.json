@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Nationality of Terrorist and Civilian Death Toll",
+  "background": "lightblue",
+  "width": 1000,
+  "height": 600,
+  "data": {
+    "url": "https://raw.githubusercontent.com/KaneSec/vega_lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+    "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+  },
+  "transform": [
+    {
+      "lookup": "properties.NAME",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/Ply2201/FIT3179/main/nationalityofterrorist.csv"
+        },
+        "key": "Country",
+        "fields": ["Civilian Death", "count"]
+      }
+    }
+  ],
+  "projection": {"type": "equalEarth"},
+  "mark": {"type": "geoshape"},
+  "encoding": {
+    "color": {
+      "field": "Civilian Death",
+      "type": "quantitative",
+      "scale": 
+          {"type": "threshold",
+           "domain": [10, 100, 1000, 10000],
+           "range": [
+          "#ffffb2",
+          "#fecc5c",
+          "#fd8d3c",
+          "#f03b20",
+          "#bd0026"
+           ]
+             }
+  
+    },
+    "tooltip": [
+      {"field": "properties.NAME", "type": "nominal", "title": "Terrorist's Nationality"},
+      {"field": "Civilian Death", "type": "quantitative", "title": "Civilian Death Toll"}
+    ]
+  }
+}

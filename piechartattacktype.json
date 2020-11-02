@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Types of Terrorist Attacks between 2001-2012",
+  "width": 500,
+  "height": 500,
+  "data": {
+    "values": [
+      {"Category": "Armed Assault", "value": 10425},
+      {"Category": "Assasination", "value": 2507},
+      {"Category": "Bombing/Explosions", "value": 22717},
+      {"Category": "Infrastructure Attack", "value": 2063},
+      {"Category": "Hijacking", "value": 102},
+      {"Category": "Hostage Taking(Barricading)", "value": 63},
+      {"Category": "Hostage Taking(Kidnapping)", "value": 2666},
+      {"Category": "Unarmed Assault)", "value": 223},
+      {"Category": "Unknown)", "value": 884}
+    ]
+  },
+  "mark": "arc",
+  "encoding": {
+    "theta": {"field": "value", "type": "quantitative"},
+    "color": {"field": "Category", "type": "nominal"},
+    "tooltip": [
+      {"field": "Category", "type": "ordinal", "title": "Attack Category"},
+      {"field": "value", "type": "quantitative","title": "Civilian Death Toll"}
+      
+    ]
+  },
+  "view": {"stroke": null}
+}
