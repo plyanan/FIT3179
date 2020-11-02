@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": "Types of Weaponsn Used to Commit Terrorism",
   "width": 800,
-  "height": 700,
+  "height": 600,
     "data": {
       "url": "https://raw.githubusercontent.com/Ply2201/FIT3179/main/worldterrorism.csv"
     },
