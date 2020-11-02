@@ -1,6 +1,6 @@
 {
  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
- "width": 1000,
+ "width": 1200,
  "height": 500,
  "title": "Civilians Wounded by Terrorism",
  "data": {
