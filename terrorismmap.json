@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Civilian Death Toll Globally due to Acts of Terrorism",
+  "title": "Civilian Death Toll Globally due to Acts of Terrorism Between The Years 2001 - 2012",
   "background": "lightblue",
   "width": 1371,
   "height": 600,
