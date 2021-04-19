@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Types of Weaponsn Used to Commit Terrorism",
+  "title": "Types of Weapons Used to Commit Terrorism",
   "width": 800,
   "height": 600,
     "data": {
