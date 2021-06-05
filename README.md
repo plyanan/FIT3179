@@ -6,3 +6,14 @@ The visualization can be accessed here: https://plyanan.github.io/FIT3179/visual
 The data set used: https://www.kaggle.com/START-UMD/gtd
 
 More about Vega-Lite: https://vega.github.io/vega-lite/
+
+Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
+
+This work is licensed under a
+[Creative Commons Attribution 4.0 International License][cc-by].
+
+[![CC BY 4.0][cc-by-image]][cc-by]
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
