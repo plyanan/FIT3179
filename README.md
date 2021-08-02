@@ -1,4 +1,4 @@
-# FIT3179
+# visualising_terrorism
 This repository was created as part of  Monash University Faculty of Information Technology's FIT3179 Data Visualization for semester 2 of 2020. It makes use of Vega Lite, a JSON based interactive graphics tool to visualize data about terrorist attacks around the world from 2001 onwards. The data set was collected and published by the START Consortium at the University of Maryland. 
 
 The visualization can be accessed here: https://plyanan.github.io/visualising_terrorism/visualisation-webpage.html
